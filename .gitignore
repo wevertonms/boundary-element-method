@@ -1,0 +1,5 @@
+.directory
+__pycache__/
+.idea/
+_static/
+.pytest_cache/
