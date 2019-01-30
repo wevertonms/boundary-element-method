@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+Element	../elastic.py	/^    class Element:  # pylint: disable=too-few-public-methods, too-many-instance-attributes$/;"	kind:class	line:61
+Element	../potential.py	/^    class Element:  # pylint: disable=too-few-public-methods, too-many-instance-attributes$/;"	kind:class	line:60
+Element	../potential/potential.py	/^    class Element:  # pylint: disable=too-few-public-methods, too-many-instance-attributes$/;"	kind:class	line:60
+FILE_NAME	../elastic.py	/^        FILE_NAME = sys.argv[1]$/;"	kind:variable	line:522
+FILE_NAME	../elastic.py	/^    FILE_NAME = "teste.json"$/;"	kind:variable	line:520
+FILE_NAME	../potential.py	/^        FILE_NAME = sys.argv[1]$/;"	kind:variable	line:465
+FILE_NAME	../potential.py	/^    FILE_NAME = "teste.json"$/;"	kind:variable	line:463
+FILE_NAME	../potential/potential.py	/^        FILE_NAME = sys.argv[1]$/;"	kind:variable	line:461
+FILE_NAME	../potential/potential.py	/^    FILE_NAME = "teste.json"$/;"	kind:variable	line:459
+InternalPoint	../elastic.py	/^    class InternalPoint:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:93
+InternalPoint	../potential.py	/^    class InternalPoint:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:94
+InternalPoint	../potential/potential.py	/^    class InternalPoint:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:94
+Model	../elastic.py	/^class Model:$/;"	kind:class	line:16
+Model	../potential.py	/^class Model:$/;"	kind:class	line:18
+Model	../potential/potential.py	/^class Model:$/;"	kind:class	line:18
+Node	../elastic.py	/^    class Node:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:28
+Node	../potential.py	/^    class Node:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:30
+Node	../potential/potential.py	/^    class Node:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:30
+__init__	../elastic.py	/^        def __init__(self, coords):$/;"	kind:member	line:37
+__init__	../elastic.py	/^        def __init__(self, coords):$/;"	kind:member	line:96
+__init__	../elastic.py	/^        def __init__(self, nodes):$/;"	kind:member	line:64
+__init__	../elastic.py	/^    def __init__($/;"	kind:member	line:111
+__init__	../potential.py	/^        def __init__(self, coords):$/;"	kind:member	line:39
+__init__	../potential.py	/^        def __init__(self, coords):$/;"	kind:member	line:97
+__init__	../potential.py	/^        def __init__(self, nodes, dps):$/;"	kind:member	line:64
+__init__	../potential.py	/^    def __init__(self, name, nodes, elements, internal_points, ngauss):$/;"	kind:member	line:110
+__init__	../potential/potential.py	/^        def __init__(self, coords):$/;"	kind:member	line:39
+__init__	../potential/potential.py	/^        def __init__(self, coords):$/;"	kind:member	line:97
+__init__	../potential/potential.py	/^        def __init__(self, nodes, dps):$/;"	kind:member	line:64
+__init__	../potential/potential.py	/^    def __init__(self, name, nodes, elements, internal_points, ngauss):$/;"	kind:member	line:110
+__str__	../elastic.py	/^        def __str__(self):$/;"	kind:member	line:102
+__str__	../elastic.py	/^        def __str__(self):$/;"	kind:member	line:53
+__str__	../potential.py	/^        def __str__(self):$/;"	kind:member	line:103
+__str__	../potential.py	/^        def __str__(self):$/;"	kind:member	line:52
+__str__	../potential/potential.py	/^        def __str__(self):$/;"	kind:member	line:103
+__str__	../potential/potential.py	/^        def __str__(self):$/;"	kind:member	line:52
+elastic.py	../elastic.py	1;"	kind:file	line:1
+gauss	../elastic.py	/^    def gauss(ngauss):$/;"	kind:member	line:293
+gauss	../potential.py	/^    def gauss(ngauss):$/;"	kind:member	line:241
+gauss	../potential/potential.py	/^    def gauss(ngauss):$/;"	kind:member	line:237
+go	../elastic.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:13
+go	../potential.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:15
+go	../potential/potential.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:15
+integrate	../elastic.py	/^    def integrate(self, i, j, is_internal):$/;"	kind:member	line:355
+integrate	../potential.py	/^    def integrate(self, i, j, is_internal):$/;"	kind:member	line:303
+integrate	../potential/potential.py	/^    def integrate(self, i, j, is_internal):$/;"	kind:member	line:299
+load_json	../elastic.py	/^    def load_json(file_name):$/;"	kind:member	line:465
+load_json	../potential.py	/^    def load_json(file_name):$/;"	kind:member	line:422
+load_json	../potential/potential.py	/^    def load_json(file_name):$/;"	kind:member	line:418
+m	../elastic.py	/^    m = Model.load_json(FILE_NAME)$/;"	kind:variable	line:523
+m	../potential.py	/^    m = Model.load_json(FILE_NAME)$/;"	kind:variable	line:466
+m	../potential/potential.py	/^    m = Model.load_json(FILE_NAME)$/;"	kind:variable	line:462
+matrix	../matrix.py	/^def matrix(elem,no,aux):$/;"	kind:function	line:1
+matrix.py	../matrix.py	1;"	kind:file	line:1
+np	../elastic.py	/^import numpy as np$/;"	kind:namespace	line:11
+np	../potential.py	/^import numpy as np$/;"	kind:namespace	line:13
+np	../potential/potential.py	/^import numpy as np$/;"	kind:namespace	line:13
+plot_model	../elastic.py	/^    def plot_model(self):$/;"	kind:member	line:187
+plot_model	../potential.py	/^    def plot_model(self):$/;"	kind:member	line:130
+plot_model	../potential/potential.py	/^    def plot_model(self):$/;"	kind:member	line:130
+plot_solution	../elastic.py	/^    def plot_solution(self, variable):$/;"	kind:member	line:229
+plot_solution	../potential.py	/^    def plot_solution(self, variable):$/;"	kind:member	line:172
+plot_solution	../potential/potential.py	/^    def plot_solution(self, variable):$/;"	kind:member	line:172
+potential.py	../potential.py	1;"	kind:file	line:1
+potential.py	../potential/potential.py	1;"	kind:file	line:1
+report	../elastic.py	/^    def report(self):$/;"	kind:member	line:512
+report	../potential.py	/^    def report(self):$/;"	kind:member	line:455
+report	../potential/potential.py	/^    def report(self):$/;"	kind:member	line:451
+solve_boundary	../elastic.py	/^    def solve_boundary(self):$/;"	kind:member	line:408
+solve_boundary	../potential.py	/^    def solve_boundary(self):$/;"	kind:member	line:365
+solve_boundary	../potential/potential.py	/^    def solve_boundary(self):$/;"	kind:member	line:361
+solve_domain	../elastic.py	/^    def solve_domain(self):$/;"	kind:member	line:441
+solve_domain	../potential.py	/^    def solve_domain(self):$/;"	kind:member	line:398
+solve_domain	../potential/potential.py	/^    def solve_domain(self):$/;"	kind:member	line:394

@@ -173,13 +173,9 @@ Flow: ({self.flows[0]:7.4g},{self.flows[1]:7.4g})\t"""
         """Show a representation of the model ans its solution in an
          interactive plot."""
         all_points = [*(self.nodes), *self.internal_points]
-        x = sorted(
-            set([point.coords[0] for point in all_points])
-        )
-        y = sorted(
-            set([point.coords[1] for point in all_points])
-        )
-        z = [[None]*len(x)] * len(y)
+        x = sorted(set([point.coords[0] for point in all_points]))
+        y = sorted(set([point.coords[1] for point in all_points]))
+        z = [[None] * len(x)] * len(y)
         variable = variable.lower()
         for point in all_points:
             point_x = x.index(point.coords[0])

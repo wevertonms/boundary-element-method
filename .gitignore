@@ -3,3 +3,4 @@ __pycache__/
 .idea/
 _static/
 .pytest_cache/
+.ipynb_checkpoints/
