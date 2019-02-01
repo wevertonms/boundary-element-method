@@ -1,5 +1,5 @@
 {
     "python.linting.pylintEnabled": true,
     "python.formatting.provider": "black",
-    "python.pythonPath": "~/.local/share/virtualenvs/boundary-element-method-JWa3FYEh/bin/python"
+    "python.pythonPath": "/usr/bin/python"
 }

@@ -5,77 +5,99 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
-Element	../elastic.py	/^    class Element:  # pylint: disable=too-few-public-methods, too-many-instance-attributes$/;"	kind:class	line:61
-Element	../potential.py	/^    class Element:  # pylint: disable=too-few-public-methods, too-many-instance-attributes$/;"	kind:class	line:60
-Element	../potential/potential.py	/^    class Element:  # pylint: disable=too-few-public-methods, too-many-instance-attributes$/;"	kind:class	line:60
-FILE_NAME	../elastic.py	/^        FILE_NAME = sys.argv[1]$/;"	kind:variable	line:522
-FILE_NAME	../elastic.py	/^    FILE_NAME = "teste.json"$/;"	kind:variable	line:520
-FILE_NAME	../potential.py	/^        FILE_NAME = sys.argv[1]$/;"	kind:variable	line:465
-FILE_NAME	../potential.py	/^    FILE_NAME = "teste.json"$/;"	kind:variable	line:463
-FILE_NAME	../potential/potential.py	/^        FILE_NAME = sys.argv[1]$/;"	kind:variable	line:461
-FILE_NAME	../potential/potential.py	/^    FILE_NAME = "teste.json"$/;"	kind:variable	line:459
-InternalPoint	../elastic.py	/^    class InternalPoint:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:93
-InternalPoint	../potential.py	/^    class InternalPoint:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:94
-InternalPoint	../potential/potential.py	/^    class InternalPoint:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:94
-Model	../elastic.py	/^class Model:$/;"	kind:class	line:16
-Model	../potential.py	/^class Model:$/;"	kind:class	line:18
-Model	../potential/potential.py	/^class Model:$/;"	kind:class	line:18
-Node	../elastic.py	/^    class Node:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:28
-Node	../potential.py	/^    class Node:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:30
-Node	../potential/potential.py	/^    class Node:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:30
-__init__	../elastic.py	/^        def __init__(self, coords):$/;"	kind:member	line:37
-__init__	../elastic.py	/^        def __init__(self, coords):$/;"	kind:member	line:96
-__init__	../elastic.py	/^        def __init__(self, nodes):$/;"	kind:member	line:64
-__init__	../elastic.py	/^    def __init__($/;"	kind:member	line:111
-__init__	../potential.py	/^        def __init__(self, coords):$/;"	kind:member	line:39
-__init__	../potential.py	/^        def __init__(self, coords):$/;"	kind:member	line:97
-__init__	../potential.py	/^        def __init__(self, nodes, dps):$/;"	kind:member	line:64
-__init__	../potential.py	/^    def __init__(self, name, nodes, elements, internal_points, ngauss):$/;"	kind:member	line:110
-__init__	../potential/potential.py	/^        def __init__(self, coords):$/;"	kind:member	line:39
-__init__	../potential/potential.py	/^        def __init__(self, coords):$/;"	kind:member	line:97
-__init__	../potential/potential.py	/^        def __init__(self, nodes, dps):$/;"	kind:member	line:64
-__init__	../potential/potential.py	/^    def __init__(self, name, nodes, elements, internal_points, ngauss):$/;"	kind:member	line:110
-__str__	../elastic.py	/^        def __str__(self):$/;"	kind:member	line:102
-__str__	../elastic.py	/^        def __str__(self):$/;"	kind:member	line:53
-__str__	../potential.py	/^        def __str__(self):$/;"	kind:member	line:103
-__str__	../potential.py	/^        def __str__(self):$/;"	kind:member	line:52
-__str__	../potential/potential.py	/^        def __str__(self):$/;"	kind:member	line:103
-__str__	../potential/potential.py	/^        def __str__(self):$/;"	kind:member	line:52
-elastic.py	../elastic.py	1;"	kind:file	line:1
-gauss	../elastic.py	/^    def gauss(ngauss):$/;"	kind:member	line:293
-gauss	../potential.py	/^    def gauss(ngauss):$/;"	kind:member	line:241
-gauss	../potential/potential.py	/^    def gauss(ngauss):$/;"	kind:member	line:237
-go	../elastic.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:13
-go	../potential.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:15
-go	../potential/potential.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:15
-integrate	../elastic.py	/^    def integrate(self, i, j, is_internal):$/;"	kind:member	line:355
-integrate	../potential.py	/^    def integrate(self, i, j, is_internal):$/;"	kind:member	line:303
-integrate	../potential/potential.py	/^    def integrate(self, i, j, is_internal):$/;"	kind:member	line:299
-load_json	../elastic.py	/^    def load_json(file_name):$/;"	kind:member	line:465
-load_json	../potential.py	/^    def load_json(file_name):$/;"	kind:member	line:422
-load_json	../potential/potential.py	/^    def load_json(file_name):$/;"	kind:member	line:418
-m	../elastic.py	/^    m = Model.load_json(FILE_NAME)$/;"	kind:variable	line:523
-m	../potential.py	/^    m = Model.load_json(FILE_NAME)$/;"	kind:variable	line:466
-m	../potential/potential.py	/^    m = Model.load_json(FILE_NAME)$/;"	kind:variable	line:462
-matrix	../matrix.py	/^def matrix(elem,no,aux):$/;"	kind:function	line:1
-matrix.py	../matrix.py	1;"	kind:file	line:1
-np	../elastic.py	/^import numpy as np$/;"	kind:namespace	line:11
-np	../potential.py	/^import numpy as np$/;"	kind:namespace	line:13
-np	../potential/potential.py	/^import numpy as np$/;"	kind:namespace	line:13
-plot_model	../elastic.py	/^    def plot_model(self):$/;"	kind:member	line:187
-plot_model	../potential.py	/^    def plot_model(self):$/;"	kind:member	line:130
-plot_model	../potential/potential.py	/^    def plot_model(self):$/;"	kind:member	line:130
-plot_solution	../elastic.py	/^    def plot_solution(self, variable):$/;"	kind:member	line:229
-plot_solution	../potential.py	/^    def plot_solution(self, variable):$/;"	kind:member	line:172
-plot_solution	../potential/potential.py	/^    def plot_solution(self, variable):$/;"	kind:member	line:172
-potential.py	../potential.py	1;"	kind:file	line:1
-potential.py	../potential/potential.py	1;"	kind:file	line:1
-report	../elastic.py	/^    def report(self):$/;"	kind:member	line:512
-report	../potential.py	/^    def report(self):$/;"	kind:member	line:455
-report	../potential/potential.py	/^    def report(self):$/;"	kind:member	line:451
-solve_boundary	../elastic.py	/^    def solve_boundary(self):$/;"	kind:member	line:408
-solve_boundary	../potential.py	/^    def solve_boundary(self):$/;"	kind:member	line:365
-solve_boundary	../potential/potential.py	/^    def solve_boundary(self):$/;"	kind:member	line:361
-solve_domain	../elastic.py	/^    def solve_domain(self):$/;"	kind:member	line:441
-solve_domain	../potential.py	/^    def solve_domain(self):$/;"	kind:member	line:398
-solve_domain	../potential/potential.py	/^    def solve_domain(self):$/;"	kind:member	line:394
+Element	../.ipynb_checkpoints/elastic-checkpoint.py	/^    class Element:  # pylint: disable=too-few-public-methods, too-many-instance-attributes$/;"	kind:class	line:61
+Element	../.ipynb_checkpoints/potential-checkpoint.py	/^    class Element:  # pylint: disable=too-few-public-methods, too-many-instance-attributes$/;"	kind:class	line:60
+Element	../elastic/__init__.py	/^    class Element:  # pylint: disable=too-few-public-methods, too-many-instance-attributes$/;"	kind:class	line:61
+Element	../potential/__init__.py	/^    class Element:  # pylint: disable=too-few-public-methods, too-many-instance-attributes$/;"	kind:class	line:60
+FILE_NAME	../.ipynb_checkpoints/elastic-checkpoint.py	/^        FILE_NAME = sys.argv[1]$/;"	kind:variable	line:611
+FILE_NAME	../.ipynb_checkpoints/elastic-checkpoint.py	/^    FILE_NAME = "teste.json"$/;"	kind:variable	line:609
+FILE_NAME	../.ipynb_checkpoints/potential-checkpoint.py	/^        FILE_NAME = sys.argv[1]$/;"	kind:variable	line:465
+FILE_NAME	../.ipynb_checkpoints/potential-checkpoint.py	/^    FILE_NAME = "teste.json"$/;"	kind:variable	line:463
+FILE_NAME	../elastic/__init__.py	/^        FILE_NAME = sys.argv[1]$/;"	kind:variable	line:822
+FILE_NAME	../elastic/__init__.py	/^    FILE_NAME = "elastic\/example1.json"$/;"	kind:variable	line:820
+FILE_NAME	../potential/__init__.py	/^        FILE_NAME = sys.argv[1]$/;"	kind:variable	line:461
+FILE_NAME	../potential/__init__.py	/^    FILE_NAME = "teste.json"$/;"	kind:variable	line:459
+InternalPoint	../.ipynb_checkpoints/elastic-checkpoint.py	/^    class InternalPoint:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:93
+InternalPoint	../.ipynb_checkpoints/potential-checkpoint.py	/^    class InternalPoint:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:94
+InternalPoint	../elastic/__init__.py	/^    class InternalPoint:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:93
+InternalPoint	../potential/__init__.py	/^    class InternalPoint:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:94
+Model	../.ipynb_checkpoints/elastic-checkpoint.py	/^class Model:$/;"	kind:class	line:16
+Model	../.ipynb_checkpoints/potential-checkpoint.py	/^class Model:$/;"	kind:class	line:18
+Model	../elastic/__init__.py	/^class Model:$/;"	kind:class	line:16
+Model	../potential/__init__.py	/^class Model:$/;"	kind:class	line:18
+Node	../.ipynb_checkpoints/elastic-checkpoint.py	/^    class Node:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:28
+Node	../.ipynb_checkpoints/potential-checkpoint.py	/^    class Node:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:30
+Node	../elastic/__init__.py	/^    class Node:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:28
+Node	../potential/__init__.py	/^    class Node:  # pylint: disable=too-few-public-methods$/;"	kind:class	line:30
+__init__	../.ipynb_checkpoints/elastic-checkpoint.py	/^        def __init__(self, coords):$/;"	kind:member	line:37
+__init__	../.ipynb_checkpoints/elastic-checkpoint.py	/^        def __init__(self, coords):$/;"	kind:member	line:96
+__init__	../.ipynb_checkpoints/elastic-checkpoint.py	/^        def __init__(self, nodes):$/;"	kind:member	line:64
+__init__	../.ipynb_checkpoints/elastic-checkpoint.py	/^    def __init__($/;"	kind:member	line:111
+__init__	../.ipynb_checkpoints/potential-checkpoint.py	/^        def __init__(self, coords):$/;"	kind:member	line:39
+__init__	../.ipynb_checkpoints/potential-checkpoint.py	/^        def __init__(self, coords):$/;"	kind:member	line:97
+__init__	../.ipynb_checkpoints/potential-checkpoint.py	/^        def __init__(self, nodes, dps):$/;"	kind:member	line:64
+__init__	../.ipynb_checkpoints/potential-checkpoint.py	/^    def __init__(self, name, nodes, elements, internal_points, ngauss):$/;"	kind:member	line:110
+__init__	../elastic/__init__.py	/^        def __init__(self, coords):$/;"	kind:member	line:37
+__init__	../elastic/__init__.py	/^        def __init__(self, coords):$/;"	kind:member	line:96
+__init__	../elastic/__init__.py	/^        def __init__(self, nodes):$/;"	kind:member	line:64
+__init__	../elastic/__init__.py	/^    def __init__(self, E=1, ni=0.0, **kwargs):$/;"	kind:member	line:111
+__init__	../potential/__init__.py	/^        def __init__(self, coords):$/;"	kind:member	line:39
+__init__	../potential/__init__.py	/^        def __init__(self, coords):$/;"	kind:member	line:97
+__init__	../potential/__init__.py	/^        def __init__(self, nodes, dps):$/;"	kind:member	line:64
+__init__	../potential/__init__.py	/^    def __init__(self, name, nodes, elements, internal_points, ngauss):$/;"	kind:member	line:110
+__init__.py	../elastic/__init__.py	1;"	kind:file	line:1
+__init__.py	../potential/__init__.py	1;"	kind:file	line:1
+__str__	../.ipynb_checkpoints/elastic-checkpoint.py	/^        def __str__(self):$/;"	kind:member	line:102
+__str__	../.ipynb_checkpoints/elastic-checkpoint.py	/^        def __str__(self):$/;"	kind:member	line:53
+__str__	../.ipynb_checkpoints/potential-checkpoint.py	/^        def __str__(self):$/;"	kind:member	line:103
+__str__	../.ipynb_checkpoints/potential-checkpoint.py	/^        def __str__(self):$/;"	kind:member	line:52
+__str__	../elastic/__init__.py	/^        def __str__(self):$/;"	kind:member	line:102
+__str__	../elastic/__init__.py	/^        def __str__(self):$/;"	kind:member	line:53
+__str__	../potential/__init__.py	/^        def __str__(self):$/;"	kind:member	line:103
+__str__	../potential/__init__.py	/^        def __str__(self):$/;"	kind:member	line:52
+elastic-checkpoint.py	../.ipynb_checkpoints/elastic-checkpoint.py	1;"	kind:file	line:1
+gauss	../.ipynb_checkpoints/elastic-checkpoint.py	/^    def gauss(ngauss):$/;"	kind:member	line:292
+gauss	../.ipynb_checkpoints/potential-checkpoint.py	/^    def gauss(ngauss):$/;"	kind:member	line:241
+gauss	../elastic/__init__.py	/^    def gauss(ngauss):$/;"	kind:member	line:298
+gauss	../potential/__init__.py	/^    def gauss(ngauss):$/;"	kind:member	line:237
+go	../.ipynb_checkpoints/elastic-checkpoint.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:13
+go	../.ipynb_checkpoints/potential-checkpoint.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:15
+go	../elastic/__init__.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:13
+go	../potential/__init__.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:15
+integrate	../.ipynb_checkpoints/elastic-checkpoint.py	/^    def integrate(self, i, j, is_internal):$/;"	kind:member	line:354
+integrate	../.ipynb_checkpoints/potential-checkpoint.py	/^    def integrate(self, i, j, is_internal):$/;"	kind:member	line:303
+integrate	../elastic/__init__.py	/^    def integrate(self, point, element, is_internal):$/;"	kind:member	line:407
+integrate	../potential/__init__.py	/^    def integrate(self, i, j, is_internal):$/;"	kind:member	line:299
+load_json	../.ipynb_checkpoints/elastic-checkpoint.py	/^    def load_json(file_name):$/;"	kind:member	line:554
+load_json	../.ipynb_checkpoints/potential-checkpoint.py	/^    def load_json(file_name):$/;"	kind:member	line:422
+load_json	../elastic/__init__.py	/^    def load_json(file_name):$/;"	kind:member	line:763
+load_json	../potential/__init__.py	/^    def load_json(file_name):$/;"	kind:member	line:418
+m	../.ipynb_checkpoints/elastic-checkpoint.py	/^    m = Model.load_json(FILE_NAME)$/;"	kind:variable	line:612
+m	../.ipynb_checkpoints/potential-checkpoint.py	/^    m = Model.load_json(FILE_NAME)$/;"	kind:variable	line:466
+m	../elastic/__init__.py	/^    m = Model.load_json(FILE_NAME)$/;"	kind:variable	line:823
+m	../potential/__init__.py	/^    m = Model.load_json(FILE_NAME)$/;"	kind:variable	line:462
+matrix2	../.ipynb_checkpoints/elastic-checkpoint.py	/^    def matrix2(self, no, aux):$/;"	kind:member	line:441
+np	../.ipynb_checkpoints/elastic-checkpoint.py	/^import numpy as np$/;"	kind:namespace	line:11
+np	../.ipynb_checkpoints/potential-checkpoint.py	/^import numpy as np$/;"	kind:namespace	line:13
+np	../elastic/__init__.py	/^import numpy as np$/;"	kind:namespace	line:11
+np	../potential/__init__.py	/^import numpy as np$/;"	kind:namespace	line:13
+plot_model	../.ipynb_checkpoints/elastic-checkpoint.py	/^    def plot_model(self):$/;"	kind:member	line:186
+plot_model	../.ipynb_checkpoints/potential-checkpoint.py	/^    def plot_model(self):$/;"	kind:member	line:130
+plot_model	../elastic/__init__.py	/^    def plot_model(self):$/;"	kind:member	line:192
+plot_model	../potential/__init__.py	/^    def plot_model(self):$/;"	kind:member	line:130
+plot_solution	../.ipynb_checkpoints/elastic-checkpoint.py	/^    def plot_solution(self, variable):$/;"	kind:member	line:228
+plot_solution	../.ipynb_checkpoints/potential-checkpoint.py	/^    def plot_solution(self, variable):$/;"	kind:member	line:172
+plot_solution	../elastic/__init__.py	/^    def plot_solution(self, variable):$/;"	kind:member	line:234
+plot_solution	../potential/__init__.py	/^    def plot_solution(self, variable):$/;"	kind:member	line:172
+potential-checkpoint.py	../.ipynb_checkpoints/potential-checkpoint.py	1;"	kind:file	line:1
+report	../.ipynb_checkpoints/elastic-checkpoint.py	/^    def report(self):$/;"	kind:member	line:601
+report	../.ipynb_checkpoints/potential-checkpoint.py	/^    def report(self):$/;"	kind:member	line:455
+report	../elastic/__init__.py	/^    def report(self):$/;"	kind:member	line:812
+report	../potential/__init__.py	/^    def report(self):$/;"	kind:member	line:451
+solve_boundary	../.ipynb_checkpoints/elastic-checkpoint.py	/^    def solve_boundary(self):$/;"	kind:member	line:407
+solve_boundary	../.ipynb_checkpoints/potential-checkpoint.py	/^    def solve_boundary(self):$/;"	kind:member	line:365
+solve_boundary	../elastic/__init__.py	/^    def solve_boundary(self):$/;"	kind:member	line:698
+solve_boundary	../potential/__init__.py	/^    def solve_boundary(self):$/;"	kind:member	line:361
+solve_domain	../.ipynb_checkpoints/elastic-checkpoint.py	/^    def solve_domain(self):$/;"	kind:member	line:530
+solve_domain	../.ipynb_checkpoints/potential-checkpoint.py	/^    def solve_domain(self):$/;"	kind:member	line:398
+solve_domain	../potential/__init__.py	/^    def solve_domain(self):$/;"	kind:member	line:394
