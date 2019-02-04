@@ -14,8 +14,7 @@ import plotly.graph_objs as go
 
 
 class Model:
-    """
-    Model for a BEM potential problem.
+    """Model for a BEM potential problem.
 
     A class that stores all the information about the model:
       - Nodes
@@ -26,12 +25,10 @@ class Model:
     """
 
     class Node:  # pylint: disable=too-few-public-methods
-        """
-        Domain nodes.
+        """Domain nodes.
 
         A class that stores all properties related to nodes, as coordinates,
         flows and potentials.
-
         """
 
         def __init__(self, coords):
@@ -41,6 +38,7 @@ class Model:
             ----------
             coords : list[float]
                  Node's coordinates
+
             """
             self.coords = np.array(coords)
             self.p = None
@@ -58,13 +56,13 @@ class Model:
         """A class that stores element's connectivity and geometric properties."""
 
         def __init__(self, nodes):
-            """
+            """Constructor.
+
             Parameters
             ----------
             nodes : list[Node]
                 Element's initial and final nodes.
-            dps : float
-                Distance of the singular points.
+
             """
             self.nodes = nodes
             self.length = (
@@ -96,7 +94,7 @@ class Model:
             self.u = [None, None]
 
         def __str__(self):
-            """Representation of internal point as a string"""
+            """Representation of internal point as a string."""
             _str = f"Boundary node,\tCoords: ( {self.coords[0]:8.4f} {self.coords[1]:8.4f} ),\t"
             _str += f"Potential: {self.p:8.4f}"
             _str += "),\tFlow: ( "
@@ -105,7 +103,8 @@ class Model:
             return _str + " )"
 
     def __init__(self, **kwargs):
-        """
+        """Constructor.
+
         Parameters
         ----------
         nodes: list[Node]
@@ -116,6 +115,7 @@ class Model:
             Internal points of the model
         ngauss: int
             Number of Gauss' points of the model
+
         """
         self.name = kwargs["name"]
         self.nodes = kwargs["nodes"]
@@ -132,9 +132,7 @@ class Model:
 
     @staticmethod
     def gauss(ngauss):
-        """
-        Returns the weights (Omegas) and parametric coordinates (ksi) for
-        numerical Gauss' integration.
+        """Weights (Omegas) and parametric coordinates (ksi) for numerical Gauss' integration.
 
         Parameters
         ----------
@@ -242,8 +240,7 @@ class Model:
 
     def integrate(self, i, j, is_internal):
         # pylint: disable=W0631,R0914
-        """
-        Computes the influence of a element over a domain/internal point.
+        """Compute the influence of a element over a domain/internal point.
 
         Parameters
         ----------
@@ -306,7 +303,7 @@ class Model:
         return H, G
 
     def solve_boundary(self):
-        """Creates the matrices H and G for the model."""
+        """Create the matrices H and G for the model."""
         H = np.zeros((len(self.nodes), len(self.elements)))
         G = np.zeros((len(self.nodes), len(self.elements)))
         for i in range(len(self.elements)):
@@ -338,7 +335,7 @@ class Model:
                 node.u = X[i]
 
     def solve_domain(self):
-        """Computes flow and potential for the internal points."""
+        """Compute flow and potential for the internal points."""
         # pylint: disable=W0631
         H = np.zeros((len(self.internal_points), len(self.elements)))
         G = np.zeros((len(self.internal_points), len(self.elements)))
@@ -359,13 +356,12 @@ class Model:
             self.internal_points[i].u = Qi[i]
 
     def report(self):
-        """Print a summary of the results.
-        """
+        """Print a summary of the results."""
         for point in [*self.nodes, *self.internal_points]:
             print(point)
 
     def plot_model(self, auto_open=True):
-        """Shows a representation of the model in an interactive plot."""
+        """Show a representation of the model in an interactive plot."""
         # Elementos de contorno
         x = [self.elements[0].nodes[0].coords[0]]
         y = [self.elements[0].nodes[0].coords[1]]
@@ -408,8 +404,7 @@ class Model:
         )
 
     def plot_solution(self, variable):
-        """Show a representation of the model ans its solution in an
-         interactive plot."""
+        """Show a representation of the model ans its solution in an interactive plot."""
         all_points = [*(self.nodes), *self.internal_points]
         x = sorted(set([point.coords[0] for point in all_points]))
         y = sorted(set([point.coords[1] for point in all_points]))
@@ -443,9 +438,7 @@ class Model:
 
 
 def load_json(file_name):
-    """
-    Reads a json file and create a `Model` object that contains all model's
-        information.
+    """Read a json file and create a `Model` object that contains all model's information.
 
     Parameters
     ----------

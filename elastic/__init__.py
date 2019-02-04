@@ -16,21 +16,22 @@ np.set_printoptions(precision=9, suppress=True, floatmode="maxprec")
 
 
 def dkron(i, j):
-    """Função delta de Kronecker
+    """Função delta de Kronecker.
 
-    Arguments:
+    Parameters
+    ----------
         i {int} -- First index.
         j {int} -- First index.
 
-    Returns:
+    Returns
+    -------
         int -- 1 de i is equal j, 0 otherwise
     """
     return 1 if i == j else 0
 
 
 class Model:
-    """
-    Model for a BEM potential problem.
+    """Model for a BEM potential problem.
 
     A class that stores all the information about the model:
       - Nodes
@@ -41,8 +42,7 @@ class Model:
     """
 
     class Node:  # pylint: disable=too-few-public-methods
-        """
-        Domain nodes.
+        """Domain nodes.
 
         A class that stores all properties related to nodes, as coordinates,
         flows and potentials.
@@ -79,7 +79,8 @@ class Model:
         """A class that stores element's connectivity and geometric properties."""
 
         def __init__(self, nodes):
-            """
+            """Constructor.
+
             Parameters
             ----------
             nodes : list[Node]
@@ -127,7 +128,8 @@ class Model:
             return _str + " )"
 
     def __init__(self, E=1, ni=0.0, **kwargs):
-        """
+        """Constructor.
+
         Parameters
         ----------
         nodes: list[Node]
@@ -216,9 +218,7 @@ class Model:
 
     @staticmethod
     def gauss(ngauss):
-        """
-        Returns the weights (Omegas) and parametric coordinates (ksi) for
-        numerical Gauss' integration.
+        """Weights (Omegas) and parametric coordinates (ksi) for numerical Gauss' integration.
 
         Parameters
         ----------
@@ -326,8 +326,7 @@ class Model:
 
     def integrate(self, point, element, is_internal):
         # pylint: disable=W0631,R0914
-        """
-        Computes the influence of a element over a domain/internal point.
+        """Compute the influence of a element over a domain/internal point.
 
         Parameters
         ----------
@@ -621,7 +620,7 @@ class Model:
         return H, G
 
     def solve_boundary(self):
-        """Creates the matrices H and G for the model."""
+        """Create the matrices H and G for the model."""
         H = np.zeros((2 * len(self.nodes), 2 * len(self.nodes)))
         G = np.zeros((2 * len(self.nodes), 2 * len(self.nodes)))
         for i in range(len(self.nodes)):
@@ -679,7 +678,7 @@ class Model:
                     node.u[dof] = X[2 * i + dof]
 
     def solve_domain(self):
-        """Computes flow and potential for the internal points."""
+        """Compute flow and potential for the internal points."""
         H = np.zeros((2 * len(self.internal_points), 2 * len(self.nodes)))
         G = np.zeros((2 * len(self.internal_points), 2 * len(self.nodes)))
         S = np.zeros((3 * len(self.internal_points), 2 * len(self.nodes)))
@@ -719,13 +718,12 @@ class Model:
 
 
     def report(self):
-        """Print a summary of the results.
-        """
+        """Print a summary of the results."""
         for point in [*self.nodes, *self.internal_points]:
             print(point)
 
     def plot_model(self, auto_open=True):
-        """Shows a representation of the model in an interactive plot."""
+        """Show a representation of the model in an interactive plot."""
         # Elementos de contorno
         x = [self.elements[0].nodes[0].coords[0]]
         y = [self.elements[0].nodes[0].coords[1]]
@@ -768,8 +766,7 @@ class Model:
         )
 
     def plot_solution(self, variable):
-        """Show a representation of the model ans its solution in an
-         interactive plot."""
+        """Show a representation of the model ans its solution in an interactive plot."""
         all_points = [*(self.nodes), *self.internal_points]
         x = sorted(set([point.coords[0] for point in all_points]))
         y = sorted(set([point.coords[1] for point in all_points]))
@@ -807,9 +804,7 @@ class Model:
 
 
 def load_json(file_name):
-    """
-    Reads a json file and create a `Model` object that contains all model's
-    information.
+    """Read a json file and create a `Model` object that contains all model's information.
 
     Parameters
     ----------
