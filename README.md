@@ -7,7 +7,7 @@ Course of the graduate program ([PPGEC](http://www.ctec.ufal.br/posgraduacao/ppg
 
 ## [potential](./potential/__init__.py)
 
-Contais classes for representing a **potential problem*** (Laplace's equation) and methods for solving it.
+Contais classes for representing a **potential problem** (Laplace's equation) and methods for solving it.
 
 ## [elastic](./elastic/__init__.py)
 
