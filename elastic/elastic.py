@@ -358,8 +358,10 @@ class Model:
                     bbb = self.dpsel * element.length
                     aaa = element.length - bbb
                 # Funções de forma avaliadas no ponto singular (com sistema local [0, 1])
-                fi1 = 1 - (aaa / element.length)  #  F.F. do no inicial do elemento
-                fi2 = 1 - fi1  #  F.F. do no final do elemento
+                # Funções de forma do no inicial do elemento
+                fi1 = 1 - (aaa / element.length)
+                # Funções de forma do nó final do elemento
+                fi2 = 1 - fi1
                 # Constantes auxiliares
                 factor1 = (1 - 2 * self.ni) / (
                     4 * np.pi * (1 - self.ni) * element.length
@@ -458,9 +460,9 @@ class Model:
         else:  # Para elemento normal, integração numerica de Gauss
             # Procedimento para pontos do contorno
             # Definição do delta de Kronecker
-            for point_dof in range(2):  #  G.L. do Ponto singular
-                for elem_node_id in range(2):  # No do elemento mapeado
-                    for dof_elem in range(2):  # G.L. do no do elemento mapeado
+            for point_dof in range(2):  #  D.O.F. do Ponto singular
+                for elem_node_id in range(2):  # Nó do elemento mapeado
+                    for dof_elem in range(2):  # D.O.F. do nó do elemento mapeado
                         for ksi, omega in zip(self.ksi, self.omega):
                             gauss_point = element.centroid + ksi * element.projections
                             if is_internal:
@@ -715,8 +717,6 @@ class Model:
             internal_points.u = u_internal_points[2 * i : 2 * i + 2]
             internal_points.p = p_internal_points[3 * i : 3 * i + 3]
 
-
-
     def report(self):
         """Print a summary of the results."""
         for point in [*self.nodes, *self.internal_points]:
@@ -797,9 +797,7 @@ class Model:
             contours=dict(coloring="heatmap", showlabels=True),
             colorbar=dict(title=variable, titleside="right", x=1.2),
         )
-        self.fig["layout"].update(
-            title=f"<b>{self.name} ({variable})</b>",
-        )
+        self.fig["layout"].update(title=f"<b>{self.name} ({variable})</b>")
         return plotly.offline.plot(self.fig, filename=f"{self.name}-{variable}.html")
 
 
@@ -849,6 +847,7 @@ def load_json(file_name):
         ni=model["NI"],
         EP=model["EP"],
     )
+
 
 if __name__ == "__main__":
     FILE_NAME = "elastic/example1.json"

@@ -1,5 +1,10 @@
 {
     "python.linting.pylintEnabled": true,
     "python.formatting.provider": "black",
-    "python.pythonPath": "~/.local/share/virtualenvs/boundary-element-method-JWa3FYEh/bin/python"
+    "python.pythonPath": "~/.local/share/virtualenvs/boundary-element-method-JWa3FYEh/bin/python",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#3F0281",
+        "titleBar.activeBackground": "#5903B4",
+        "titleBar.activeForeground": "#FDFCFF"
+    }
 }
